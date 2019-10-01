@@ -1,0 +1,26 @@
+class task:
+
+  def __init__ (self, nameString):
+    self.name = nameString
+    self.inputString = ""
+
+  def getString(self):
+    self.inputString = input("Insert String: ")
+
+  def printString(self):
+    print(self.inputString.upper())
+    
+task1 = task("")
+task1.getString()
+task1.printString()
+
+"""Question 5
+
+Question:
+Define a class which has at least two methods:
+getString: to get a string from console input
+printString: to print the string in upper case.
+Also please include simple test function to test the class methods.
+
+Hints:
+Use __init__ method to construct some parametersv
