@@ -1,0 +1,15 @@
+class task:
+
+  def __init__ (self, nameString):
+    self.name = nameString
+    self.inputString = ""
+
+  def getString(self):
+    self.inputString = input("Insert String: ")
+
+  def printString(self):
+    print(self.inputString.upper())
+    
+task1 = task("")
+task1.getString()
+task1.printString()
