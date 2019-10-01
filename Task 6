@@ -1,15 +1,14 @@
-class task:
+import math
 
-  def __init__ (self, nameString):
-    self.name = nameString
-    self.inputString = ""
+Q = ""
 
-  def getString(self):
-    self.inputString = input("Insert String: ")
+C = int(50)
+H = int(30)
+D = int(input("Insert Numbers Seperated By Commas (e.g. 100,150,180): "))
 
-  def printString(self):
-    print(self.inputString.upper())
-    
-task1 = task("")
-task1.getString()
-task1.printString()
+inBrackets = 2 * C * D
+Result = inBrackets / H
+
+Q = math.sqrt(Result)
+
+print (round(Q))
