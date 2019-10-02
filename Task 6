@@ -1,14 +1,10 @@
-import math
+from math import *
+c = 50
+h = 30
+def formula(d):
+  return sqrt((2*c*d)/h)
 
-Q = ""
+d = input("Insert numbers split by commas: ").split(",")
+d = [str(round(formula(int(i))))for i in d]
+print(",".join(d))
 
-C = int(50)
-H = int(30)
-D = int(input("Insert Numbers Seperated By Commas (e.g. 100,150,180): "))
-
-inBrackets = 2 * C * D
-Result = inBrackets / H
-
-Q = math.sqrt(Result)
-
-print (round(Q))
