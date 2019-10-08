@@ -1,0 +1,12 @@
+print ("Give multiple lines, double tap enter to end:")
+
+x = []
+while True:
+  y = input()
+  if y:
+    y = y.upper()
+    x.append(y)
+  else:
+    break
+text = '\n'.join(x)
+print (text)
