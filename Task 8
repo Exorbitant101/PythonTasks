@@ -1,0 +1,4 @@
+x = input("Give a sequence of words seperated by commas:")
+y = x.split(',')
+y.sort()
+print (','.join(y))
