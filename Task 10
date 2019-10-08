@@ -1,0 +1,6 @@
+x = input("Give a sequence of words seperated by spaces:")
+y = x.split(' ')
+y = list(dict.fromkeys(y))
+y.sort()
+
+print (' '.join(y))
